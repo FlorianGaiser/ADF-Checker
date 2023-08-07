@@ -1,0 +1,242 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>ADF-Check</title>
+        <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+      </head>
+      <body>
+        <h1>ADF-Check</h1>
+        <p>The diagrams are saved in: .../ADF-Checker/testDiagrams/xml/</p>
+        <h1>Similarity Report</h1>
+  
+  <h2>Component Similarities:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Diagram Name</th>
+        <th>Element 1</th>
+        <th>Other Diagram Name</th>
+        <th>Element 2</th>
+        <th>Similarity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>firstComponent.drawio.xml</td>
+          <td>«Component»FirstComponent</td>
+          <td>secondComponent.drawio.xml</td>
+          <td>«Component»FirstComonent</td>
+          <td>0.9361702127659575</td>
+        </tr>
+      
+        <tr>
+          <td>firstComponent.drawio.xml</td>
+          <td>«Component»SecondComponent</td>
+          <td>secondComponent.drawio.xml</td>
+          <td>«Component»SecondComponen</td>
+          <td>0.9795918367346939</td>
+        </tr>
+      
+        <tr>
+          <td>firstComponent.drawio.xml</td>
+          <td>«Component»ThirdComponent</td>
+          <td>secondComponent.drawio.xml</td>
+          <td>«Component»Thirdomponent</td>
+          <td>0.9361702127659575</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  <h2>Usage Similarities:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Diagram Name</th>
+        <th>Element 1</th>
+        <th>Other Diagram Name</th>
+        <th>Element 2</th>
+        <th>Similarity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>firstUsage.drawio.xml</td>
+          <td>TestinConnection3</td>
+          <td>secondUsage.drawio.xml</td>
+          <td>TestingConnection3</td>
+          <td>0.9090909090909091</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <h2>Invalid Connections:</h2>
+  
+    <h3>invalidConnection.drawio.xml</h3>  
+        <table>
+          <thead>
+            <tr>
+              <th>Source</th>
+              <th>Target</th>
+              <th>Missing connection description</th>
+            </tr>
+          </thead>
+          <tbody>
+
+              
+                <tr>
+                  <td>undefined</td>
+                  <td>«Component»Fourth</td>
+                  <td>c</td>
+                </tr>
+              
+                <tr>
+                  <td>«Component»First</td>
+                  <td>undefined</td>
+                  <td>a</td>
+                </tr>
+              
+                <tr>
+                  <td>«Component»Fourth</td>
+                  <td>«Component»First</td>
+                  <td>undefined</td>
+                </tr>
+              
+
+          </tbody>
+        </table>
+        
+
+
+        <h2>Connection Similarities:</h2>
+        
+          <h3>dataUtilizationTest.drawio.xml</h3>  
+          <table>
+            <tbody>
+              
+                <tr>
+                  
+                    <td></td>
+                  
+                    <td>«Component»BottomComponent</td>
+                  
+                    <td>«Component»LeftComponent</td>
+                  
+                    <td>«Component»MiddleComponent</td>
+                  
+                    <td>«Component»RightComponent</td>
+                  
+                    <td>«Component»TopComponent</td>
+                  
+                </tr>
+              
+                <tr>
+                  
+                    <td>«Component»BottomComponent</td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                    <td>use</td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                </tr>
+              
+                <tr>
+                  
+                    <td>«Component»LeftComponent</td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                    <td>use</td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                </tr>
+              
+                <tr>
+                  
+                    <td>«Component»MiddleComponent</td>
+                  
+                    <td>dataflow</td>
+                  
+                    <td>dataflow</td>
+                  
+                    <td></td>
+                  
+                    <td>dataflow</td>
+                  
+                    <td>dataflow</td>
+                  
+                </tr>
+              
+                <tr>
+                  
+                    <td>«Component»RightComponent</td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                </tr>
+              
+                <tr>
+                  
+                    <td>«Component»TopComponent</td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                    <td>dataflow</td>
+                  
+                    <td></td>
+                  
+                    <td></td>
+                  
+                </tr>
+              
+            </tbody>
+          </table>
+        
+
+        
+      </body>
+    </html>
+  
